@@ -6,6 +6,20 @@
     <title>17- Challenge 😭</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/master.css">
+    <style>
+        body {
+            main {
+                section.section {
+                    p.example {
+                        font-size: 0.8rem;
+                    }
+                    xmp {
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
+    </style>
 </head>
 <body class="emmet">
     <nav class="nav">
@@ -20,10 +34,42 @@
         </header>
         <section class="section">
             <h3>Example:</h3>
-            <p class="example">↔️</p>
+            <p class="example"> header#header>nav.navbar.navbar-inverse>div.container>(div.navbar-header>button.navbar-toggle[type=button]>span.sr-only{Toggle navigation}+span.icon-bar*3^a.navbar-brand[href=index.php]>img[src=imgs/logo.png])+(div.collapse>ul.nav.navbar-nav>(li>a.link[href=index.html]{Inicio})+(li>a.active.link[href=login.html]{Ingresar})+(li>a.link[href=registro.html]{Registrarse})+(li>a.link[href=contacto.html]{Contacto})) ↔️</p>
             <h3>Result:</h3>
 <xmp>
-
+<header id="header">
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.php">
+                    <img src="imgs/logo.png" alt="">
+                </a>
+            </div>
+            <div class="collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="active link">
+                        <a href="login.html">Ingresar</a>
+                    </li>
+                    <li>
+                        <a class="link" href="registro.html">Registrarse</a>
+                    </li>
+                    <li>
+                        <a class="link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 </xmp>
         </section>
     </main>
